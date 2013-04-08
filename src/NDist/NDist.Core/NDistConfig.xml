@@ -2,7 +2,7 @@
 <NDistConfig>
   <settings>
     <setting name="ServerPort" value="30086" />
-    <setting name="DefaultServicePath" value="D:\Halil\Projects\NDist\Services" />
+    <setting name="DefaultServicePath" value="C:\Temp\NDist\Services" />
   </settings>
   <services>
     <service name="DiscChecker"></service>
