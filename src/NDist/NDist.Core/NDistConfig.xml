@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NDistConfig>
+  <settings>
+    <setting name="ServerPort" value="30086" />
+    <setting name="DefaultServicePath" value="D:\Halil\Projects\NDist\Services" />
+  </settings>
+  <services>
+    <service name="DiscChecker"></service>
+    <service name="SmsService"></service>
+  </services>
+</NDistConfig>

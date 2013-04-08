@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NDistServiceConfig>
+  <service name="DiscChecker" version="1.0.0" assemblyName="DiskChecker" typeName="Hik.DiskChecker.DiskCheckerService">
+    <dependencies>
+      <dependency serviceName="SmsService" minVersion="1.0.0" />
+    </dependencies>
+  </service>
+</NDistServiceConfig>

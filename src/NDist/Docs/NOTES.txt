@@ -1,0 +1,28 @@
+﻿Bir servis;
+- Dosya sistemindeki resource'lar
+- Kullanılan kütüphaneler!
+- Bağımlı servisler
+- Database
+
+------------------------------ Ne istiyorum?
+
++ HOSTING
+  + Servisler ana bir serviste host edilir, durdurulup başlatılabilir.
+
+- GÜNCELLEME
+  - Manuel kontrol ve güncelleme yapılabilir.
+  - Periyodik güncelleme denetleme yapabilir.
+  - Güncellemeler push edilebilir ve anında yapılabilir.
+
+- MESAJLAŞMA
+  - Servisler arası senkron & asenkron mesajlaşma olabilir.
+  - RMI olabilir? Bunun için referans ihtiyacı var! -> proxy?
+
+- DEPENDENCY
+  - Servisler birbirine bağımlı olabilir. Biri yüklenirken bağımlılıklar da yüklenir (nuget gibi)
+  - O makinede olmayan bir bağımlılık routing ile başka bir makineyi kullanacak şekilde ayarlanabilir (remote services & local services)
+
+-------------------------------------------
+
+Ayar: local servisler ve remote servisler tanımlanabilir.
+

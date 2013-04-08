@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NDistServiceConfig>
+  <service name="SmsService" version="1.0.0" assemblyName="SmsService" typeName="Hik.Sms.SmsService">
+  </service>
+</NDistServiceConfig>

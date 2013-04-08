@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9E786B8-DBB8-47CB-A862-EFD7EF40C257}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hik</RootNamespace>
+    <AssemblyName>NDist.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.1.0\lib\net40-client\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.1.0\lib\net40\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Scs">
+      <HintPath>..\Dependencies\Libraries\Scs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NDist\Applications\INDistApplication.cs" />
+    <Compile Include="NDist\Config\INDistConfigProcessor.cs" />
+    <Compile Include="NDist\Config\NDistConfig.cs" />
+    <Compile Include="NDist\Config\NDistConfigProcessor.cs" />
+    <Compile Include="NDist\Config\ServiceEntry.cs" />
+    <Compile Include="NDist\Config\SettingEntry.cs" />
+    <Compile Include="NDist\Common\InstallStatus.cs" />
+    <Compile Include="NDist\Common\InstallStatusChangedEventArgs.cs" />
+    <Compile Include="NDist\Exceptions\NDistException.cs" />
+    <Compile Include="NDist\Management\NDistManagementService.cs" />
+    <Compile Include="NDist\Helpers\EventHelper.cs" />
+    <Compile Include="NDist\Services\Config\NDistConfigProcessor.cs" />
+    <Compile Include="NDist\Services\Config\NDistServiceDependencyEntry.cs" />
+    <Compile Include="NDist\Services\Config\NDistServiceEntry.cs" />
+    <Compile Include="NDist\Services\Controller\NDistServiceNotFoundException.cs" />
+    <Compile Include="NDist\Services\Config\NDistServiceConfig.cs" />
+    <Compile Include="NDist\Services\ServiceRunningStatusChangedEventArgs.cs" />
+    <Compile Include="NDist\Services\INDistServiceHost.cs" />
+    <Compile Include="NDist\Management\INDistManagementServiceClient.cs" />
+    <Compile Include="NDist\Management\INDistManagementService.cs" />
+    <Compile Include="NDist\Management\NDistManagementServiceRunner.cs" />
+    <Compile Include="NDist\Common\IInstallable.cs" />
+    <Compile Include="NDist\Management\Objects\ServiceInfo.cs" />
+    <Compile Include="NDist\Common\RunningStatusChangedEventArgs.cs" />
+    <Compile Include="NDist\Services\Controller\NDistServiceController.cs" />
+    <Compile Include="NDist\Services\NDistServiceHost.cs" />
+    <Compile Include="NDist\Dependency\Installers\NDistMainInstaller.cs" />
+    <Compile Include="NDist\Management\INDistManagementServicesRunner.cs" />
+    <Compile Include="NDist\Services\Controller\INDistServiceController.cs" />
+    <Compile Include="NDist\Common\RunningStatus.cs" />
+    <Compile Include="NDist\Startup\NDistRunner.cs" />
+    <Compile Include="NDist\Common\IRunnable.cs" />
+    <Compile Include="NDist\NDistServer.cs" />
+    <Compile Include="NDist\Services\NDistService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NDistConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

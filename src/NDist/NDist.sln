@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDist.Core", "NDist.Core\NDist.Core.csproj", "{C9E786B8-DBB8-47CB-A862-EFD7EF40C257}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{74753536-3B48-413D-9A14-66BF33587E0C}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\NOTES.txt = Docs\NOTES.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{8B40C5CF-9CBB-4361-9252-9209244E795E}"
+	ProjectSection(SolutionItems) = preProject
+		Config\NDist.config = Config\NDist.config
+		Config\SmsServiceDefinition.xml = Config\SmsServiceDefinition.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B1C9B18A-E3DF-45CB-8EDF-EF2871F54EE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDist.Service.Test", "Tests\NDist.Service.Test\NDist.Service.Test.csproj", "{D38758AA-756C-4D1D-ACBB-F2054CD8D433}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleServices", "SampleServices", "{64FA0C47-A846-44A8-A114-24BEC6E2CDCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiskChecker", "SampleServices\DiskChecker\DiskChecker.csproj", "{7B81ADF7-7008-45D2-8AF4-0DAB1D6B2C3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{785A7228-576C-451D-8867-54055A9E85A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{B9EA95C4-76E8-4C75-B11E-4D1A03A35453}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\Libraries\Scs.dll = Dependencies\Libraries\Scs.dll
+		Dependencies\Libraries\Scs.XML = Dependencies\Libraries\Scs.XML
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDist.Manager", "NDist.Manager\NDist.Manager.csproj", "{63297252-BAFE-43EB-80B9-C7AA30118ED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsService", "SampleServices\SmsService\SmsService.csproj", "{19D95770-E0CC-4AB6-9A1F-407A539424E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9E786B8-DBB8-47CB-A862-EFD7EF40C257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E786B8-DBB8-47CB-A862-EFD7EF40C257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E786B8-DBB8-47CB-A862-EFD7EF40C257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E786B8-DBB8-47CB-A862-EFD7EF40C257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D38758AA-756C-4D1D-ACBB-F2054CD8D433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38758AA-756C-4D1D-ACBB-F2054CD8D433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38758AA-756C-4D1D-ACBB-F2054CD8D433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38758AA-756C-4D1D-ACBB-F2054CD8D433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B81ADF7-7008-45D2-8AF4-0DAB1D6B2C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B81ADF7-7008-45D2-8AF4-0DAB1D6B2C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B81ADF7-7008-45D2-8AF4-0DAB1D6B2C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B81ADF7-7008-45D2-8AF4-0DAB1D6B2C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63297252-BAFE-43EB-80B9-C7AA30118ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63297252-BAFE-43EB-80B9-C7AA30118ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63297252-BAFE-43EB-80B9-C7AA30118ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63297252-BAFE-43EB-80B9-C7AA30118ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D95770-E0CC-4AB6-9A1F-407A539424E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D95770-E0CC-4AB6-9A1F-407A539424E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D95770-E0CC-4AB6-9A1F-407A539424E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D95770-E0CC-4AB6-9A1F-407A539424E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D38758AA-756C-4D1D-ACBB-F2054CD8D433} = {B1C9B18A-E3DF-45CB-8EDF-EF2871F54EE0}
+		{7B81ADF7-7008-45D2-8AF4-0DAB1D6B2C3E} = {64FA0C47-A846-44A8-A114-24BEC6E2CDCC}
+		{19D95770-E0CC-4AB6-9A1F-407A539424E6} = {64FA0C47-A846-44A8-A114-24BEC6E2CDCC}
+		{B9EA95C4-76E8-4C75-B11E-4D1A03A35453} = {785A7228-576C-451D-8867-54055A9E85A3}
+	EndGlobalSection
+EndGlobal
