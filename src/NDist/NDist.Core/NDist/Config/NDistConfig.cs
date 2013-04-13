@@ -17,6 +17,10 @@ namespace Hik.NDist.Config
         [XmlArrayItem("service", typeof(ServiceEntry))]
         public List<ServiceEntry> Services { get; set; }
 
+        [XmlArray("serviceSources")]
+        [XmlArrayItem("serviceSource", typeof(ServiceSource))]
+        public List<ServiceSource> ServiceSources { get; set; }
+
         public SettingEntry GetSetting(string name)
         {
             return Settings.Single(setting => setting.Name == name);

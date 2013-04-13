@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using Hik.NDist.Manager.MainTree;
+using Hik.NDist.Manager.Pages;
 
 namespace Hik.NDist.Manager
 {
@@ -42,6 +43,11 @@ namespace Hik.NDist.Manager
             {
                 ((IMainTreeItem)item.Tag).Dispose();
             }
+        }
+
+        private void Menu_Services_InstallService(object sender, RoutedEventArgs e)
+        {
+            MainPages.Items.Add(new InstallServicePage());
         }
     }
 }

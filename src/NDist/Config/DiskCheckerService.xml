@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<DistService name="DiskCheckerService" version="1.0.0">
-  <DependentServices>
-    <Service name="SmsService" version=">=1.0.0" />
-  </DependentServices>
-</DistService>

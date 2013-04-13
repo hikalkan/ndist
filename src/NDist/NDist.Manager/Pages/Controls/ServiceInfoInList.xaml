@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Hik.NDist.Manager.Pages.Controls.ServiceInfoInList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="80" d:DesignWidth="480">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/NDist.Manager;component/Images/service_big.png" Width="48" Height="38" VerticalAlignment="Top" />
+        <StackPanel Grid.Column="1">
+            <Label Name="ServiceName" Padding="0" Margin="1" FontSize="14">Service name</Label>
+            <TextBlock Margin="1" TextWrapping="Wrap">Service description here. Service description here.Service description here.Service description here.Service description here.Service description here.Service description here.Service description here.</TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

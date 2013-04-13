@@ -1,28 +1,23 @@
-﻿Bir servis;
-- Dosya sistemindeki resource'lar
-- Kullanılan kütüphaneler!
-- Bağımlı servisler
-- Database
+﻿NDIST Features
 
------------------------------- Ne istiyorum?
+- HOST
+  + Host services in seperated application domains.
+  + Remotely connect to servers, start/stop services.
 
-+ HOSTING
-  + Servisler ana bir serviste host edilir, durdurulup başlatılabilir.
+- INSTALL/UNINSTALL
+  - Install/uninstall a service remotely
 
-- GÜNCELLEME
-  - Manuel kontrol ve güncelleme yapılabilir.
-  - Periyodik güncelleme denetleme yapabilir.
-  - Güncellemeler push edilebilir ve anında yapılabilir.
+- UPDATE
+  - Manual check & update of a service (mass update on all servers)
+  - Periodically check & update of configured services in a server.
 
-- MESAJLAŞMA
-  - Servisler arası senkron & asenkron mesajlaşma olabilir.
-  - RMI olabilir? Bunun için referans ihtiyacı var! -> proxy?
+- MESSAGE
+  - Async & Sync messaging
+  - Request/Repose style messaging
+  - Reliable, Loose coupled, guarantied delivery, Send and Forget type messaging.
+  - Messaging between services in same or different servers.
+  - Remote method invocation on top of messaging
 
 - DEPENDENCY
-  - Servisler birbirine bağımlı olabilir. Biri yüklenirken bağımlılıklar da yüklenir (nuget gibi)
-  - O makinede olmayan bir bağımlılık routing ile başka bir makineyi kullanacak şekilde ayarlanabilir (remote services & local services)
-
--------------------------------------------
-
-Ayar: local servisler ve remote servisler tanımlanabilir.
+  - Services can have dependent services. So, when installing a service, all depended services are installed.
 

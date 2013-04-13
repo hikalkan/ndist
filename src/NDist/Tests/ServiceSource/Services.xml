@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NDistServiceSource>
+  <services>
+    <service name="DiscChecker" version="1.0.0" file="DiscChecker-1.0.0.zip">
+      <dependencies>
+        <dependency serviceName="SmsService" minVersion="1.0.0" />
+      </dependencies>
+    </service>
+    <service name="SmsService" version="1.0.0" file="SmsService-1.0.0.zip" />
+  </services>
+</NDistServiceSource>

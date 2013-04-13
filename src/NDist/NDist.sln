@@ -8,12 +8,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{74753536-3
 		Docs\NOTES.txt = Docs\NOTES.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{8B40C5CF-9CBB-4361-9252-9209244E795E}"
-	ProjectSection(SolutionItems) = preProject
-		Config\NDist.config = Config\NDist.config
-		Config\SmsServiceDefinition.xml = Config\SmsServiceDefinition.xml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B1C9B18A-E3DF-45CB-8EDF-EF2871F54EE0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDist.Service.Test", "Tests\NDist.Service.Test\NDist.Service.Test.csproj", "{D38758AA-756C-4D1D-ACBB-F2054CD8D433}"
@@ -39,6 +33,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E844FD
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceSource", "ServiceSource", "{58A6F1EB-B9C9-43DA-A693-4626BA9AC8BC}"
+	ProjectSection(SolutionItems) = preProject
+		Tests\ServiceSource\Services.xml = Tests\ServiceSource\Services.xml
 	EndProjectSection
 EndProject
 Global
@@ -73,6 +72,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D38758AA-756C-4D1D-ACBB-F2054CD8D433} = {B1C9B18A-E3DF-45CB-8EDF-EF2871F54EE0}
+		{58A6F1EB-B9C9-43DA-A693-4626BA9AC8BC} = {B1C9B18A-E3DF-45CB-8EDF-EF2871F54EE0}
 		{7B81ADF7-7008-45D2-8AF4-0DAB1D6B2C3E} = {64FA0C47-A846-44A8-A114-24BEC6E2CDCC}
 		{19D95770-E0CC-4AB6-9A1F-407A539424E6} = {64FA0C47-A846-44A8-A114-24BEC6E2CDCC}
 		{B9EA95C4-76E8-4C75-B11E-4D1A03A35453} = {785A7228-576C-451D-8867-54055A9E85A3}

@@ -3,25 +3,41 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="NDist Manager" Height="350" Width="525" Closing="Window_Closing" Icon="Images/ndist.png">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200" />
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid>
-            <TreeView Name="MainTree" ContextMenuOpening="MainTree_ContextMenuOpening">
-                <TreeView.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
 
-                </TreeView.Resources>
-                <TreeView.ContextMenu>
-                    <ContextMenu>
-                    </ContextMenu>
-                </TreeView.ContextMenu>
-            </TreeView>
-        </Grid>
-        <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="1" ResizeBehavior="PreviousAndNext" Width="5" Background="#FFBCBCBC" />
-        <Grid Grid.Column="2">
-            
+        <Menu IsMainMenu="True">
+            <MenuItem Header="Services">
+                <MenuItem Header="Install service" Click="Menu_Services_InstallService"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid>
+                    <TreeView Name="MainTree" ContextMenuOpening="MainTree_ContextMenuOpening">
+                        <TreeView.Resources>
+
+                        </TreeView.Resources>
+                        <TreeView.ContextMenu>
+                            <ContextMenu>
+                            </ContextMenu>
+                        </TreeView.ContextMenu>
+                    </TreeView>
+                </Grid>
+            </Grid>
+            <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="1" ResizeBehavior="PreviousAndNext" Width="5" Background="#FFBCBCBC" />
+            <Grid Grid.Column="2">
+                <TabControl Name="MainPages">
+                    
+                </TabControl>
+            </Grid>
         </Grid>
     </Grid>
 </Window>

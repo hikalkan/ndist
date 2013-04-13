@@ -55,6 +55,7 @@
     <Compile Include="NDist\Config\NDistConfig.cs" />
     <Compile Include="NDist\Config\NDistConfigProcessor.cs" />
     <Compile Include="NDist\Config\ServiceEntry.cs" />
+    <Compile Include="NDist\Config\ServiceSource.cs" />
     <Compile Include="NDist\Config\SettingEntry.cs" />
     <Compile Include="NDist\Common\InstallStatus.cs" />
     <Compile Include="NDist\Common\InstallStatusChangedEventArgs.cs" />

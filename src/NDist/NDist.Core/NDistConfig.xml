@@ -4,6 +4,9 @@
     <setting name="ServerPort" value="30086" />
     <setting name="DefaultServicePath" value="C:\Temp\NDist\Services" />
   </settings>
+  <serviceSources>
+    <serviceSource type="http" address="http://localhost/ndist/services/Services.xml" />
+  </serviceSources>
   <services>
     <service name="DiscChecker"></service>
     <service name="SmsService"></service>

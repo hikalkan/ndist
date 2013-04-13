@@ -8,14 +8,5 @@ namespace Hik.NDist.Config
     {
         [XmlAttribute("name")]
         public string Name { get; set; }
-
-        //[XmlAttribute("version")]
-        //public string Version { get; set; }
-
-        //[XmlAttribute("assemblyName")]
-        //public string AssemblyName { get; set; }
-
-        //[XmlAttribute("typeName")]
-        //public string TypeName { get; set; }
     }
 }
