@@ -47,7 +47,14 @@ namespace Hik.NDist.Manager
 
         private void Menu_Services_InstallService(object sender, RoutedEventArgs e)
         {
-            MainPages.Items.Add(new InstallServicePage());
+            CreateNewTabPage(new InstallServicePage());
+        }
+
+        private void CreateNewTabPage(object control)
+        {
+            var tabItem = new TabItem {Header = "Install new service", Content = control};
+            MainPages.Items.Add(tabItem);
+            tabItem.IsSelected = true;
         }
     }
 }

@@ -67,6 +67,11 @@
     <Compile Include="NDist\Services\Config\NDistServiceEntry.cs" />
     <Compile Include="NDist\Services\Controller\NDistServiceNotFoundException.cs" />
     <Compile Include="NDist\Services\Config\NDistServiceConfig.cs" />
+    <Compile Include="NDist\Services\Packages\HttpServicePackageSource.cs" />
+    <Compile Include="NDist\Services\Packages\IServicePackageSource.cs" />
+    <Compile Include="NDist\Services\Packages\PackageDependencyInfo.cs" />
+    <Compile Include="NDist\Services\Packages\PackageInfo.cs" />
+    <Compile Include="NDist\Services\Packages\ServicePackage.cs" />
     <Compile Include="NDist\Services\ServiceRunningStatusChangedEventArgs.cs" />
     <Compile Include="NDist\Services\INDistServiceHost.cs" />
     <Compile Include="NDist\Management\INDistManagementServiceClient.cs" />

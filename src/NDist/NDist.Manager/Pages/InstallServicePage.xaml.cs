@@ -16,11 +16,20 @@ namespace Hik.NDist.Manager.Pages
 
         private void Initialize()
         {
-            ServiceList.Children.Add(new ServiceInfoInList());
-            ServiceList.Children.Add(new ServiceInfoInList());
-            ServiceList.Children.Add(new ServiceInfoInList());
-            ServiceList.Children.Add(new ServiceInfoInList());
-            ServiceList.Children.Add(new ServiceInfoInList());
+            ServiceList.Items.Add(new ServiceInfoInList());
+            ServiceList.Items.Add(new ServiceInfoInList());
+            ServiceList.Items.Add(new ServiceInfoInList());
+        }
+
+        private void InstallServiceButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (ServiceList.SelectedItems.Count <= 0)
+            {
+                return;
+            }
+
+            var selectedServiceItem = ServiceList.SelectedItems[0] as ServiceInfoInList;
+
         }
     }
 }
